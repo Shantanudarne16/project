@@ -1,0 +1,15 @@
+understanding Dataset -----------> Done
+Project Flow Design   -----------> Ongoing
+Data Cleaning         -----------> Ongoing
+
+-------------------------------------------------------------------------------
+
+till now: understanding dataset
+          started cleaning dataset(bat_team,bow_team,renamed teams,removed colums ,etc)
+          changed datetype(if needed for timeseries analysis) (from string to datetime object)
+	  
+
+	  started preparing prjectflow 
+		
+
+		

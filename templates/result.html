@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cricket Score Predictor</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100%;
+      margin: 0;
+      background-color: #ffffff;
+      /* background-image: url("ipl2.jpg"); */
+      background-image: url('/static/ipl2.jpg') background-repeat: no-repeat;
+      background-color: #cccccc;
+      background-size: 100% 100%;
+      background-blend-mode: lighten;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Website Title -->
+  <div class="container" style="font-family:'Times New Roman', Times, serif">
+    <h2 class='container-heading'><span class="heading_second" >CRICKET SCORE PREDICTOR</span></h2>
+    <div class='description' style="font-family: cursive;">
+        <p>A Machine Learning Web App, Built with Flask, Deployed using AWS.</p>
+    </div>
+</div>
+
+  <!-- Prediction Area -->
+  <div class="container">
+    <div class="prediction-area2">
+
+      <div class="card">
+        <img src="static/ipl3.jpg" class="card-img-top" width="90%" height="70%"
+          style="max-height:300px;max-width:700px;" />
+        <div class="card-body">
+          <h3 class="card-title">Prediction</h3>
+          <p class="card-text">
+            <p class='result-p'><strong><p style="font-family:verdana" color:red >The Final Predicted Score (range): {{ lower_limit }} to {{ upper_limit }}</p></p></p><strong>
+          </p>
+          <a href="/" class="btn btn-dark">Home</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- Footer -->
+  <div class="container-fluid">
+    <div class='footer'>
+
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+            <!-- Grid container -->
+            <div class="container pt-4">
+                <!-- Section: Social media -->
+              <section class="mb-4">
+                  <!-- Facebook -->
+                  <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/shantanu.darne" target="_blank" role="button"
+                      data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                  <!-- Twitter -->
+                  <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/ShantanuDarne1" target="_blank" role="button"
+                      data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                  <!-- Instagram -->
+                  <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/shantanudarne16/" target="_blank" role="button"
+                      data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                  <!-- Linkedin -->
+
+
+                  <!-- Github -->
+
+              </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright
+                <!-- <a class="text-dark"></a> -->
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>
